@@ -251,11 +251,12 @@ proc ::tar::create {tar files args} {
     parseOpts {dereference 0} $args
 
     set path [pwd]
-    debug "debug: current path: $path"
-    set tarName "../../$tar"
-    debug "debug: tar/create $tarName $files"
+    log "debug: current path: $path"
+    set tarName $tar
+ # "../../$tar"
+    log "debug: tar/create $tarName $files"
 
-    set fh [::open $tar2 w+]
+    set fh [::open $tarName w+]
     fconfigure $fh -encoding binary -translation lf -eofchar {}
     foreach x [recurseDirs $files $dereference] {
         writefile $x $fh $dereference

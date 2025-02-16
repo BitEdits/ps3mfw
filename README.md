@@ -24,4 +24,6 @@ Banner
 Credits
 -------
 
-* 5HT, BitEdits
+* Anonymous Developers (Code Monkeys)
+* 5HT (Bit Edits)
+
