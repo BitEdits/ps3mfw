@@ -24,4 +24,4 @@ Banner
 Credits
 -------
 
-* Namdak Tonpa, maintainer
+* 5HT, BitEdits

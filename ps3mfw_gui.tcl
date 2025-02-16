@@ -12,11 +12,11 @@ if { $::tcl_platform(os) == "Linux" } {
     ::ttk::setTheme "clam"
 }
 
-set icon32 [image create photo -file [file join ${::PS3MFW_DIR} images ps3mfw-icon-32.gif]]
-set icon128 [image create photo -file [file join ${::PS3MFW_DIR} images ps3mfw-icon-128.gif]]
+set icon32 [image create photo -file [file join ${::PS3MFW_DIR} images be-icon-32.png]]
+set icon128 [image create photo -file [file join ${::PS3MFW_DIR} images be-icon-128.png]]
 if { [catch {wm iconphoto . -default $icon128 $icon32} res] } {
     puts "error $res"
-    catch {wm iconbitmap . -default [file join ${::PS3MFW_DIR} images ps3mfw-icon.ico]}
+    catch {wm iconbitmap . -default [file join ${::PS3MFW_DIR} images be.ico]}
 }
 
 # This is a hack to use the window state 'zoomed' on Linux (X11).
@@ -249,9 +249,9 @@ namespace eval ::gui {
     }
 
     proc add_about_msg { about } {
-        set icon128 [image create photo -file [file join ${::PS3MFW_DIR} images ps3mfw-icon-128.gif]]
+        set icon128 [image create photo -file [file join ${::PS3MFW_DIR} images be-icon-128.png]]
         pack [::ttk::label $about.img -image $icon128 -anchor center] -expand false -fill both
-        pack [::ttk::label $about.l1 -text "PS3MFW Builder v${::PS3MFW_VERSION}" -anchor center] -expand false -fill x
+        pack [::ttk::label $about.l1 -text "PS3MFW v${::PS3MFW_VERSION}" -anchor center] -expand false -fill x
         pack [::ttk::label $about.l2 -text "" -anchor center] -expand false -fill x
         pack [::ttk::label $about.l3 -text "Developed by :" -anchor center] -expand false -fill x
         pack [::ttk::label $about.l4 -text "Anonymous Developers" -anchor center] -expand false -fill x
@@ -279,7 +279,7 @@ namespace eval ::gui {
 		
     proc add_settings { settings } {
 	
-        set icon128 [image create photo -file [file join ${::PS3MFW_DIR} images ps3mfw-icon-128.gif]]
+        set icon128 [image create photo -file [file join ${::PS3MFW_DIR} images be-icon-128.png]]
         pack [::ttk::label $settings.img -image $icon128 -anchor center] -expand false -fill both
 		set files [glob -directory [file join $::PS3MFW_DIR language] *]
 		list langlist ""
