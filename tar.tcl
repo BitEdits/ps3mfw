@@ -250,10 +250,14 @@ proc ::tar::create {tar files args} {
     set dereference 0
     parseOpts {dereference 0} $args
 
+    package require platform 
+
     set path [pwd]
+    set os [exec uname -o]
+    if { $os == "Msys" } { set tarName $tar } else { set tarName "../../$tar" }
+
     log "debug: current path: $path"
-    set tarName $tar
- # "../../$tar"
+    log "debug: platform: $os"
     log "debug: tar/create $tarName $files"
 
     set fh [::open $tarName w+]
