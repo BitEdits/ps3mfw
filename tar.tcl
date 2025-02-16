@@ -248,16 +248,13 @@ proc ::tar::writefile {in out followlinks} {
 
 proc ::tar::create {tar files args} {
     set dereference 0
+    set path [pwd]
     parseOpts {dereference 0} $args
 
-    package require platform 
-
-    set path [pwd]
-    set os [exec uname -o]
-    if { $os == "Msys" } { set tarName $tar } else { set tarName "../../$tar" }
+    if { $::tcl_platform(platform) == "windows"} { set tarName $tar } else { set tarName "../../$tar" }
 
     log "debug: current path: $path"
-    log "debug: platform: $os"
+    log "debug: platform: $::tcl_platform(platform)"
     log "debug: tar/create $tarName $files"
 
     set fh [::open $tarName w+]
