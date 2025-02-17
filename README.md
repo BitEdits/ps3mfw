@@ -61,7 +61,7 @@ storage devices from being shown under Game Data Utility was fixed.
 * `patch_lv2.tcl` — Patch LV2 kernel. Modifies CORE OS `lv1.self`.
 * `patch_nas_plugin.tcl` — Patch package installer. Modifies `nas_plugin.sprx`.
 * `patch_vsh.tcl` — Patch Application launcher. Modifies `vsh.self`.
-* `add_license_msg.tcl` — Modifies PUP license.xml. Add a custom message to the 'New Features' installation screen.
+* `add_license_msg.tcl` — Modifies PUP `license.xml`. Add a custom message to the 'New Features' installation screen.
 * `clean_friends.tcl` — Clean unwanted icons from the XMB Friends Category.
 * `clean_game.tcl` — Clean unwanted icons from the XMB Game Category.
 * `clean_music.tcl` — Clean unwanted icons from the XMB Music Category.
