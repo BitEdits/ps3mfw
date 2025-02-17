@@ -73,11 +73,11 @@ $ tclsh ps3mfw --gui false
 GUI
 ---
 
-![image](images/ps3mfw.png)
-
 ```
 $ tclsh ps3mfw
 ```
+
+![image](images/ps3mfw.png)
 
 Credits
 -------
