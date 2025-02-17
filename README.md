@@ -1,7 +1,7 @@
 PS3MFW
 ======
 
-PS3 Modified Firmware Release Tool. Version 2025.
+PS3 Modified Firmware Release Tool. `Version 2025`.
 
 # Dependencies
 
