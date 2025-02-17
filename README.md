@@ -55,7 +55,7 @@ storage devices from being shown under Game Data Utility was fixed.
 * `spoof_version.tcl` — Allows changing the firmware version the PS3 appears to be on, similar to the rebug spoofer.
 * `change_ssl_cer.tcl` — Allows changing of SSL certificates.
 * `change_theme.tcl` — Can be used to replace the default "Airbrush" theme with another theme file (.p3t format).
-* `patch_shop.tcl` — Creates firmware to transform demo PS3s (the units used in stores) into full retail PS3s, without the need for service mode!
+* `patch_shop.tcl` — Creates firmware to transform demo PS3s (store units) into retail PS3s!
 * `patch_category_game.tcl` — Add new icons to the XMB Game category. Modifies `category_game.xml`.
 * `patch_lv1.tcl` — Patch LV1 hypervisor. Modifies CORE OS `lv1.self`.
 * `patch_lv2.tcl` — Patch LV2 kernel. Modifies CORE OS `lv1.self`.
