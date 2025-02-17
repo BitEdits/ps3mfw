@@ -46,7 +46,6 @@ storage devices from being shown under Game Data Utility was fixed.
 * `patch_privacy.tcl` – PS3 collects a large amount of personal information while it’s operating. Additionally personal information is sent to many domain names when internet access is enabled (unrelated to PSN access). This task prevents PS3 from sending any data to the domain names you select.
 * `broken_bluray.tcl` – Allows you to remove Blu-Ray firmware installation so that the MFW can be installed without a working Blu-Ray drive. This is potentially dangerous if used on a PS3 with a working drive, and should only be used if the drive is broken.
 * `spoof_version.tcl` – Allows changing the firmware version the PS3 appears to be on, similar to the rebug spoofer.
-* `change_coldboot_files.tcl` – Advanced users only: Allows changing the sound played and image shown during the boot process. Caution: If improper files are used, this can cause a “brick”.
 * `change_ssl_cer.tcl` – Allows changing of SSL certificates.
 * `change_theme.tcl` – Can be used to replace the default "Airbrush" theme with another theme file (.p3t format).
 * `patch_shop.tcl` – Creates firmware to transform demo PS3s (the units used in stores) into full retail PS3s, without the need for service mode!
@@ -56,13 +55,13 @@ storage devices from being shown under Game Data Utility was fixed.
 * `patch_nas_plugin.tcl` - Patch package installer. Modifies `nas_plugin.sprx`.
 * `patch_vsh.tcl` - Patch Application launcher. Modifies `vsh.self`.
 * `add_license_msg.tcl` Modifies PUP license.xml. Add a custom message to the 'New Features' installation screen.
-* `clean_friends.tcl` - Clean unwanted icons from the XMB Friends Category. Modifies `category_friends.xml`.
-* `clean_game.tcl` - Clean unwanted icons from the XMB Game Category. Modifies `category_game.xml`.
-* `clean_music.tcl` - Clean unwanted icons from the XMB Music Category. Modifies `category_music.xml`.
-* `clean_network.tcl` - Clean unwanted icons from the XMB Network Category. Modifies `category_network.xml`.
-* `clean_photo.tcl` - Clean unwanted icons from the XMB Photo Category. Modifies `category_photo.xml`.
-* `clean_psn.tcl` - Clean unwanted icons from the XMB PlayStation Network Category. Modifies `category_psn.xml`.
-* `clean_video.tcl` - Clean unwanted icons from the XMB Video Category. Modifies `category_video.xml`.
+* `clean_friends.tcl` - Clean unwanted icons from the XMB Friends Category.
+* `clean_game.tcl` - Clean unwanted icons from the XMB Game Category.
+* `clean_music.tcl` - Clean unwanted icons from the XMB Music Category.
+* `clean_network.tcl` - Clean unwanted icons from the XMB Network Category.
+* `clean_photo.tcl` - Clean unwanted icons from the XMB Photo Category.
+* `clean_psn.tcl` - Clean unwanted icons from the XMB PlayStation Network Category.
+* `clean_video.tcl` - Clean unwanted icons from the XMB Video Category.
 
 Credits
 -------
