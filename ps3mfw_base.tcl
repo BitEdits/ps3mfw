@@ -12,7 +12,7 @@
 proc usage {{msg ""}} {
     global options
 
-    ego
+    about_message
 
     if {$msg != ""} {
         puts $msg

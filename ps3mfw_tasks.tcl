@@ -8,27 +8,14 @@
 # License ("GPL") version 3, as published by the Free Software Foundation.
 #
 
-proc ego {} {
-    puts "PS3MFW Creator v${::PS3MFW_VERSION}"
-    puts "    Copyright (C) 2011 Project PS3MFW"
-    puts "    This program comes with ABSOLUTELY NO WARRANTY;"
-    puts "    This is free software, and you are welcome to redistribute it"
-    puts "    under certain conditions; see COPYING for details."
-    puts ""
-    puts "    Developed By :"
-    puts "    Anonymous Developers"
-    puts ""
-}
-
-proc ego_gui {} {
-    log "PS3MFW Creator v${::PS3MFW_VERSION}"
+proc about_message {} {
+    log "PS3MFW Release Tool v${::PS3MFW_VERSION}"
     log "    Copyright (C) 2011 Project PS3MFW"
     log "    This program comes with ABSOLUTELY NO WARRANTY;"
     log "    This is free software, and you are welcome to redistribute it"
     log "    under certain conditions; see COPYING for details."
     log ""
-    log "    Developed By :"
-    log "    Anonymous Developers"
+    log "    Developed By: Anonymous Developers"
     log ""
 }
 
@@ -66,8 +53,7 @@ proc build_mfw {input output tasks} {
 
     set ::selected_tasks [sort_tasks ${tasks}]
 
-    # print out ego info
-    ego_gui
+    about_message
 
     if {${input} == "" || ${output} == ""} {
         die "Must specify an input and output file"

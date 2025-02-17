@@ -63,6 +63,22 @@ storage devices from being shown under Game Data Utility was fixed.
 * `clean_psn.tcl` - Clean unwanted icons from the XMB PlayStation Network Category.
 * `clean_video.tcl` - Clean unwanted icons from the XMB Video Category.
 
+Console
+-------
+
+```
+$ tclsh ps3mfw --gui false
+```
+
+GUI
+---
+
+![image](images/ps3mfw.png)
+
+```
+$ tclsh ps3mfw
+```
+
 Credits
 -------
 
