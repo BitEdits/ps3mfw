@@ -250,8 +250,7 @@ proc ::tar::create {tar files args} {
     set dereference 0
     set path [pwd]
     parseOpts {dereference 0} $args
-
-    if { $::tcl_platform(platform) == "windows"} { set tarName $tar } else { set tarName "../../$tar" }
+    set tarName $tar
 
     log "debug: current path: $path"
     log "debug: platform: $::tcl_platform(platform)"

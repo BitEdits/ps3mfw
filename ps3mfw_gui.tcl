@@ -90,7 +90,7 @@ namespace eval ::gui {
 		close $re		
 		set ::xmllang [::xml::Load $enc_xmllang]
 		
-        wm title . "PS3MFW Builder v${::PS3MFW_VERSION}"
+        wm title . "PS3MFW v${::PS3MFW_VERSION}"
         create_menu
 
         if {![catch {tk windowingsystem} wsystem] && $wsystem == "aqua"} {
@@ -253,8 +253,8 @@ namespace eval ::gui {
         pack [::ttk::label $about.img -image $icon128 -anchor center] -expand false -fill both
         pack [::ttk::label $about.l1 -text "PS3MFW v${::PS3MFW_VERSION}" -anchor center] -expand false -fill x
         pack [::ttk::label $about.l2 -text "" -anchor center] -expand false -fill x
-        pack [::ttk::label $about.l3 -text "Developed by :" -anchor center] -expand false -fill x
-        pack [::ttk::label $about.l4 -text "Anonymous Developers" -anchor center] -expand false -fill x
+        pack [::ttk::label $about.l3 -text "Maintainer:" -anchor center] -expand false -fill x
+        pack [::ttk::label $about.l4 -text "5HT (Bit Edits)" -anchor center] -expand false -fill x
         pack [::ttk::label $about.l5 -text "" -anchor center] -expand false -fill x
     }
 

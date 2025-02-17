@@ -8,7 +8,7 @@
 # License ("GPL") version 3, as published by the Free Software Foundation.
 #
 
-set ::PS3MFW_VERSION "0.2.1"
+set ::PS3MFW_VERSION "0.2.17"
 
 # Option --debug: Show verbose debugging information
 # Option --silent: Disable log output

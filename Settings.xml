@@ -1,9 +1,9 @@
 <Settings>
     <language>English</language>
-	<BUILD_DIR>E:/Computers/Sony-PS3/PS3-TOOLS/ps3mfw</BUILD_DIR>
-	<PS3_KEYS>E:/Computers/Sony-PS3/PS3-TOOLS/ps3keys</PS3_KEYS>
+	<BUILD_DIR>/tmp/PS3MFW</BUILD_DIR>
+	<PS3_KEYS>/home/tonpa/depot/BitEdits/ps3keys</PS3_KEYS>
     <Theme>clam</Theme>
-    <IN_FILE>E:/Computers/Sony-PS3/PS3-ROM/Firmware 3.55/PS3UPDAT.PUP</IN_FILE>
+    <IN_FILE>/mnt/e/Computers/Sony-PS3/PS3-ROM/Firmware 3.55/PS3UPDAT.PUP</IN_FILE>
     <OUT_FILE>MFW.PUP</OUT_FILE>
-	<tasks> add_license_msg change_version patch_category_game</tasks>
+	<tasks></tasks>
 </Settings>

@@ -698,6 +698,9 @@ proc remove_pkgs_from_upl_xml { xml key message } {
 
 # .rco files handling routines
 proc rco_dump {rco rco_xml rco_dir} {
+    set path [pwd]
+    log "debug: rco_dump: $rco $rco_xml $rco_dir"
+    log "debug: current path: $path"
     shell ${::RCOMAGE} dump [file nativename $rco] [file nativename $rco_xml] --resdir [file nativename $rco_dir]
 }
 
