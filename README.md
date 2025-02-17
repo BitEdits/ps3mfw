@@ -13,8 +13,8 @@ PS3 Modified Firmware Release Tool. `Version 2025`.
 PS3MFW uses following external binaries:
 
 * `ps3tools` — utilities for certified files (PUP/PKG/SELF). See <a href="https://github.com/BitEdits/ps3tools">ps3tools</a>.
-* `rcomage` — utility for RCO recource containers. See <a href="https://github.com/BitEdits/ps3tools">ps3rco</a>.
-* `gimconv` — utility for GIM graphics image files (wine). See <a href="https://github.com/BitEdits/ps3tools">ps3gim</a>.
+* `rcomage` — utility for RCO recource containers. See <a href="https://github.com/BitEdits/ps3rco">ps3rco</a>.
+* `gimconv` — utility for GIM graphics image files (wine). See <a href="https://github.com/BitEdits/ps3gim">ps3gim</a>.
 
 # Banner
 
