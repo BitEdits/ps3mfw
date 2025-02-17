@@ -50,8 +50,8 @@ storage devices from being shown under Game Data Utility was fixed.
 
 # Tasks
 
-* `patch_privacy.tcl` — PS3 collects a large amount of personal information while it’s operating. Additionally personal information is sent to many domain names when internet access is enabled (unrelated to PSN access). This task prevents PS3 from sending any data to the domain names you select.
-* `broken_bluray.tcl` — Allows you to remove Blu-Ray firmware installation so that the MFW can be installed without a working Blu-Ray drive. This is potentially dangerous if used on a PS3 with a working drive, and should only be used if the drive is broken.
+* `patch_privacy.tcl` — Prevent sending any data to the domain names unrelated to PSN access.
+* `broken_bluray.tcl` — Allows you to remove Blu-Ray firmware installation. Use only if the drive is broken.
 * `spoof_version.tcl` — Allows changing the firmware version the PS3 appears to be on, similar to the rebug spoofer.
 * `change_ssl_cer.tcl` — Allows changing of SSL certificates.
 * `change_theme.tcl` — Can be used to replace the default "Airbrush" theme with another theme file (.p3t format).
