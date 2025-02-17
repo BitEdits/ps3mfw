@@ -52,7 +52,7 @@ storage devices from being shown under Game Data Utility was fixed.
 
 * `patch_privacy.tcl` — Prevent sending any data to the domain names unrelated to PSN access.
 * `broken_bluray.tcl` — Allows you to remove Blu-Ray firmware installation. Use only if the drive is broken.
-* `spoof_version.tcl` — Allows changing the firmware version the PS3 appears to be on, similar to the rebug spoofer.
+* `spoof_version.tcl` — Allows changing the firmware version the PS3 appears to be on.
 * `change_ssl_cer.tcl` — Allows changing of SSL certificates.
 * `change_theme.tcl` — Can be used to replace the default "Airbrush" theme with another theme file (.p3t format).
 * `patch_shop.tcl` — Creates firmware to transform demo PS3s (store units) into retail PS3s!
@@ -61,7 +61,7 @@ storage devices from being shown under Game Data Utility was fixed.
 * `patch_lv2.tcl` — Patch LV2 kernel. Modifies CORE OS `lv1.self`.
 * `patch_nas_plugin.tcl` — Patch package installer. Modifies `nas_plugin.sprx`.
 * `patch_vsh.tcl` — Patch Application launcher. Modifies `vsh.self`.
-* `add_license_msg.tcl` — Modifies PUP `license.xml`. Add a custom message to the 'New Features' installation screen.
+* `add_license_msg.tcl` — Modifies PUP `license.xml`. Add a custom message to the installation screen.
 * `clean_friends.tcl` — Clean unwanted icons from the XMB Friends Category.
 * `clean_game.tcl` — Clean unwanted icons from the XMB Game Category.
 * `clean_music.tcl` — Clean unwanted icons from the XMB Music Category.
