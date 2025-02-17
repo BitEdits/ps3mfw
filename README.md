@@ -3,11 +3,18 @@ PS3MFW
 
 PS3 Modified Firmware Release Tool. `Version 2025`.
 
+# Features
+
+* Lightweight (4K CLOC)
+* Windows (Mingw-64), Linux (WSL)
+
 # Dependencies
 
-* TCL/TK 8.6 for GUI facilities
-* `ps3tools` utilities for PUP/PKG/SELF packaging
-* `rcomage` utility for RCO files
+PS3MFW uses following external binaries:
+
+* `ps3tools` - utilities for certified files (PUP/PKG/SELF)
+* `rcomage` - utility for RCO recource containers
+* `gimconv` - utility for GIM graphics image files (wine)
 
 # Banner
 
