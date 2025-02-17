@@ -27,12 +27,12 @@ namespace eval ::add_license_msg {
     }
 
     append ::add_license_msg::options(--license-message) "Modified firmware created by $::tcl_platform(user) using PS3MFW Framework.\n\n"
-    append ::add_license_msg::options(--license-message) "This system firmware update has been modified from the original, and is therefore unofficial and not endorsed by SCE.\n\n"
-    append ::add_license_msg::options(--license-message) "Installation of this system firmware update increases the risk of rendering your game system unstable or unusable.\n\n"
-    append ::add_license_msg::options(--license-message) "Use at your own risk.  No guarantee expressed or implied.\n\n"
-    append ::add_license_msg::options(--license-message) "If anything bad happens as a result of installing this system update, you cannot hold anyone responsible but yourself.\n\n"
+    append ::add_license_msg::options(--license-message) "This system firmware update has been modified from the original, and is therefore unofficial and not endorsed by SCE.\n"
+    append ::add_license_msg::options(--license-message) "Installation of this system firmware update increases the risk of rendering your game system unstable or unusable.\n"
+    append ::add_license_msg::options(--license-message) "Use at your own risk.  No guarantee expressed or implied.\n"
+    append ::add_license_msg::options(--license-message) "If anything bad happens as a result of installing this system update, you cannot hold anyone responsible but yourself.\n"
     append ::add_license_msg::options(--license-message) "The creators of this system firmware modification process do not condone piracy.\n"
-    append ::add_license_msg::options(--license-message) "Use your system responsibly and only play games that you have purchased.\n"
+    append ::add_license_msg::options(--license-message) "Use your system responsibly and only play games that you have purchased.\n\n"
     append ::add_license_msg::options(--license-message) "Enjoy!\n\n"
 
     proc main {} {
@@ -99,32 +99,6 @@ namespace eval ::add_license_msg {
 
         ::sed_in_place $::CUSTOM_LICENSE_XML "<str id=\"msg_update_eula_1\">" $message_nodes
 
-# set xml [::xml::LoadFile $::CUSTOM_LICENSE_XML]
-
-# # index 1 through 9 don't seem to work
-# set index 10
-# while {[::xml::GetNodeByAttribute $xml "xml:locale:str" id "msg_updater_$index"] != ""} {
-#     incr index
-# }
-
-# set message_nodes [list]
-# for {set i 0} {$i < [llength $messages]} {incr i} {
-#     set node_xml "<str id=\"msg_updater_${index}\">[::xml::xmlencode [lindex $messages $i]]</str>"
-#     lappend message_nodes [::xml::Load $node_xml]
-#     incr index
-# }
-
-# set i 0
-# while {true} {
-#     set node_idx [::xml::GetNodeIndices $xml "xml:locale" $i]
-#     if {$node_idx == ""} break
-#     log "Modifying license for locale [::xml::GetAttribute $xml xml:locale lang $i]"
-#     foreach node $message_nodes {
-#         set xml [::xml::InsertNode $xml [::xml::GetNodeIndicesByAttribute $xml "xml:locale:str" id "msg_update_eula_1" $i] $node]
-#     }
-#     incr i
-# }
-# ::xml::SaveToFile $xml $::CUSTOM_LICENSE_XML
     }
 }
 
