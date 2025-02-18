@@ -54,7 +54,7 @@ storage devices from being shown under Game Data Utility was fixed.
 * `broken_bluray.tcl` — Allows you to remove Blu-Ray firmware installation. Use only if the drive is broken.
 * `spoof_version.tcl` — Allows changing the firmware version the PS3 appears to be on.
 * `change_ssl_cer.tcl` — Allows changing of SSL certificates.
-* `change_theme.tcl` — Can be used to replace the default "Airbrush" theme with another theme file (.p3t format).
+* `change_theme.tcl` — Replace the default "Airbrush" theme with another theme file in `.p3t` format.
 * `patch_privacy.tcl` — Prevent sending any data to the domain names unrelated to PSN access.
 * `patch_shop.tcl` — Creates firmware to transform demo PS3s (store units) into retail PS3s!
 * `patch_category_game.tcl` — Add new icons to the XMB Game category. Modifies `category_game.xml`.
